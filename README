@@ -1,76 +1,12 @@
-febootstrap - Bootstrapping tool for creating supermin appliances
-by Richard W.M. Jones (rjones@redhat.com)
-http://people.redhat.com/~rjones/febootstrap
-----------------------------------------------------------------------
+THIS REPOSITORY HAS MOVED!
 
-febootstrap is a tool for building supermin appliances.  These are
-tiny appliances [similar to virtual machines], usually around 100KB in
-size, which get fully instantiated on-the-fly in a fraction of a
-second when you need to boot one of them.
+The tool formerly called 'febootstrap' is now called 'supermin'
+and the new repository is here:
 
-A complete description is in the febootstrap(8) man page.
+https://github.com/libguestfs/supermin
 
-IMPORTANT NOTE FOR USERS OF FEBOOTSTRAP 2.x:
-  febootstrap 3.x is a complete rewrite.  febootstrap 2.x could only
-  build Fedora distributions.  This version can build many varieties
-  of Linux distros.  3.x only builds supermin appliances, it does not
-  build chroots.  3.x does not build cross-distro, cross-release or
-  cross-architecture systems.  If you want febootstrap 2.x, please use
-  the 'febootstrap-2.x' branch from the git repository.
+The new home page is here:
 
-Requirements
-------------
+http://people.redhat.com/~rjones/supermin/
 
-  ocaml
-
-  ocaml findlib ("ocamlfind" program)
-
-  perldoc
-    - This is just used to generate the manpage.
-
-  bash
-
-  gcc
-
-  gawk
-
-  libcom_err
-  libext2fs
-  /sbin/mke2fs
-    - These are part of e2fsprogs.
-
-For Fedora/RHEL:
-
-  rpm
-  yum
-  yumdownloader
-
-For Debian/Ubuntu:
-
-  dpkg
-  aptitude
-
-Optional
---------
-
-These are only needed if you plan to boot the supermin appliances you
-are building:
-
-  qemu >= 0.13
-  kernel >= 2.6.36
-
-  zlib - if your kernel uses gzipped modules
-
-Building and installing
------------------------
-
-  ./configure
-  make
-  sudo make install
-
-Feedback and bugs
------------------
-
-Send feedback to libguestfs@redhat.com.  You can file bugs in
-https://bugzilla.redhat.com/ (under "Fedora", "febootstrap")
-
+- RWMJ 2013-02-05
